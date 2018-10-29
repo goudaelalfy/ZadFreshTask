@@ -42,7 +42,10 @@ return [
         ],
 
         'api' => [
-            'driver' => 'token',
+            //By Gouda
+            //'driver' => 'token',
+            'driver' => 'passport',
+            
             'provider' => 'users',
         ],
     ],
