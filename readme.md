@@ -27,11 +27,13 @@ Laravel v5.7, MySQL, Passport to authenticate APIs
 - composer install
 - create mysql database then update .inv file to set mysql data
 - php artisan migrate
+- php artisan passport:install //install passport for API authentication
 
 - call POST API to resister new user to use APIs:
 api/register
 
-request (body):
+request (body) sample data:
+
 {"name":"Gouda Elalfy","email":"goudaelalfy@hotmail.com","password":"123456","c_password":"123456"}
 
 
@@ -39,7 +41,8 @@ request (body):
 - call POST API to login by username and password
 api/login 
 
-request (body):
+request (body) sample data:
+
 {"email":"goudaelalfy@hotmail.com","password":"123456"}
 
 
@@ -48,12 +51,14 @@ request (body):
 api/student/getChaptersDates
 
 request (header):		//For Authentication
+
 'headers' => [
 'Accept' => 'application/json',
 'Authorization' => Bearer <access_token_returned_from_login_API_response>	// where access_token_returned_from_login_API_response is a response token by api/login API 
 ]
 
-request (body):
+request (body) sample data:
+
 {"starting_date":"2018-10-29","number_of_days_per_week_arr":[2, 4, 6],"session_numbers":"9"}
 
 
