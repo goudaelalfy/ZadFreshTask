@@ -1,4 +1,4 @@
-<p align="center"><img src="https://zadfresh.com/images/logo.png" width="200px"></p>
+<p align="center"><img src="https://zadfresh.com/images/logo.png" width="100px"></p>
 
 ## About ZadFresh Task
 
