@@ -47,7 +47,7 @@ class StudentController extends Controller {
         $number_of_days_per_week_arr = $input['number_of_days_per_week_arr'];
         $number_of_days_per_week_arr_count = count($number_of_days_per_week_arr);
 
-        $session_numbers = $input['session_numbers'];
+        $session_numbers = $input['session_numbers'] * 30; // session_numbers input for 1 chapter
 
 
         $couner_dates = 1;
