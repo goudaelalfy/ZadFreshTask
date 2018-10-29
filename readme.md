@@ -1,4 +1,4 @@
-<p align="center"><img src="https://zadfresh.com/images/logo.png"></p>
+<p align="center"><img src="https://zadfresh.com/images/logo.png" width="200px"></p>
 
 ## About ZadFresh Task
 
@@ -25,17 +25,18 @@ Laravel v5.7, MySQL, Passport to authenticate APIs
 
 - git clone the repository
 - composer install
+- create mysql database then update .inv file to set mysql data
 - php artisan migrate
-- call POST API to resister new user to use APIs:
 
+- call POST API to resister new user to use APIs:
 api/register
 
 request (body):
 {"name":"Gouda Elalfy","email":"goudaelalfy@hotmail.com","password":"123456","c_password":"123456"}
 
 
-- call POST API to login by username and password
 
+- call POST API to login by username and password
 api/login 
 
 request (body):
